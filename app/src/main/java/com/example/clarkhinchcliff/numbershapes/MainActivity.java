@@ -11,9 +11,11 @@ public class MainActivity extends AppCompatActivity {
     public void fade(View view) {
 
         ImageView morty = (ImageView) findViewById(R.id.morty);
+        ImageView rick = (ImageView) findViewById(R.id.rick);
+
 
         morty.animate().alpha(0f).setDuration(500);
-
+        rick.animate().alpha(1f).setDuration(500);
 
     }
 
