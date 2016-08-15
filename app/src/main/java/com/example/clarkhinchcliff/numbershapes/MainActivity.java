@@ -11,10 +11,9 @@ public class MainActivity extends AppCompatActivity {
     public void fade(View view) {
 
         ImageView morty = (ImageView) findViewById(R.id.morty);
-//        ImageView rick = (ImageView) findViewById(R.id.rick);
+        morty.animate().translationYBy(1000f).setDuration(2000);
 
-
-        morty.animate().translationXBy(-1000f).setDuration(500);
+        ImageView rick = (ImageView) findViewById(R.id.rick);
 //        rick.animate().alpha(1f).setDuration(500);
 
     }
@@ -23,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView morty = (ImageView) findViewById(R.id.morty);
+        morty.setTranslationX(-1000f);
     }
 }
