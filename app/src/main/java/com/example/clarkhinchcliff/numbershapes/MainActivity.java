@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     public void fade(View view) {
 
         ImageView morty = (ImageView) findViewById(R.id.morty);
-        morty.animate().rotation(180f).setDuration(2000);
+        morty.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
 
         ImageView rick = (ImageView) findViewById(R.id.rick);
 //        rick.animate().alpha(1f).setDuration(500);
