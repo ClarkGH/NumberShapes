@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 //        ImageView rick = (ImageView) findViewById(R.id.rick);
 
 
-        morty.animate().translationYBy(1000f).setDuration(500);
+        morty.animate().translationXBy(-1000f).setDuration(500);
 //        rick.animate().alpha(1f).setDuration(500);
 
     }
